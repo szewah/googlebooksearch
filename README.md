@@ -1,7 +1,3 @@
-## Available Scripts
-
-
-
 ### React Google Book Search
 
 
