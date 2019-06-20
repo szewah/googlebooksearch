@@ -25,9 +25,8 @@ class Search extends Component {
     console.log("[DEBUG] query", this.state.query);
     API.getSearchedBooks(this.state.query)
       .then(res => {
-        console.log("[DEBUG] response data", res.data.items);
+        console.log("Response data", res.data.items);
         const books = res.data.items.map(item => {
-          console.log("[DEBUG] imageLinks", item.volumeInfo.imageLinks);
           const book = {
             key: item.id,
             id: item.id,

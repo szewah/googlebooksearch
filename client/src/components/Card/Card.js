@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "../Grid";
+import '../style.css'
 
 const Card = props => {
   return props.books.length === 0 ? (
@@ -12,7 +13,7 @@ const Card = props => {
             <Row>
               <Col size="md-12">
                 <a className="title" href={book.link}>
-                  {book.title}
+                  <h5>{book.title}</h5>
                 </a>
               </Col>
             </Row>
@@ -30,7 +31,7 @@ const Card = props => {
               </Col>
               <Col size="md-7">
                 <h6 className="author">{book.authors}</h6>
-                <h6 className="desc">{book.description}</h6>
+                <p className="description">{book.description}</p>
               </Col>
               <Col size="md-1">
                 <button
