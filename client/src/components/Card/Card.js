@@ -12,8 +12,7 @@ const Card = props => {
             <Row>
               <Col size="md-12">
                 <a className="title" href={book.link}>
-                  <h4>{book.title}</h4>
-                  
+                  {book.title}
                 </a>
               </Col>
             </Row>
@@ -31,7 +30,7 @@ const Card = props => {
               </Col>
               <Col size="md-7">
                 <h6 className="author">{book.authors}</h6>
-                <p className="desc">{book.description}</p>
+                <h6 className="desc">{book.description}</h6>
               </Col>
               <Col size="md-1">
                 <button
