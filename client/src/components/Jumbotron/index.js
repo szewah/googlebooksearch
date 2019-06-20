@@ -12,8 +12,6 @@ const Jumbotron = ({ q, handleInputChange, handleFormSubmit }) => {
         textAlign: "center",
         background: "white",
         borderTop: "1px solid #EBEBEB",
-        borderBottom: "1px solid #EBEBEB",
-        boxShadow: "2px 2px #EBEBEB",
         color: "#777",
         fontFamily: "arial,sans-serif",
         width: "100%"
@@ -22,18 +20,17 @@ const Jumbotron = ({ q, handleInputChange, handleFormSubmit }) => {
     >
       <img className="img img-fluid " src={logo} alt="logo" />
 
-      <h6 className="mt-4 mb-5 pb-4">Search and save Books of the internet</h6>
       <form>
         <Input
           value={q}
           name="query"
           onChange={handleInputChange}
-          placeholder="Books"
         />
         <FormBtn onClick={handleFormSubmit} type="submit">
-          Book Search
+          Find
         </FormBtn>
       </form>
+      <p>Search the world's most comprehensive index of full-text books.</p>
     </div>
   );
 };
