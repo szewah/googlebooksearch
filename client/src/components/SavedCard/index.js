@@ -30,7 +30,7 @@ const Card = props => {
               </Col>
               <Col size="md-7">
                 <h6 className="author">{book.authors}</h6>
-                <h6 className="description">{book.description}</h6>
+                <p className="description">{book.description}</p>
               </Col>
               <Col size="md-1">
                 <button

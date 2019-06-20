@@ -1,7 +1,7 @@
 .form-control {
     position: relative;
     margin: 0 auto;
-    width: 484px;
+    width: 600px;
     padding-left: 15px;
     padding-top: 6px;
 }
@@ -9,20 +9,11 @@
 .button {
     color: white;
     background: red;
-}
-
-.button1 {
-    color: #777;
+    width: 100px;
 }
 
 .button:hover {
-    color: #777;
-    border: 1px solid #777;
-}
-
-.button1:hover {
-    color: #777;
-    border: 1px solid #777;
+    background: yellow;
 }
 
 @media only screen and (max-width: 770px) {
@@ -30,10 +21,9 @@
         padding-left: 25px !important;
     }
     .button {
-        padding-top: 2px;
-        padding-left: 0px;
+        padding: 4px 10px;
     }
     .button:hover {
-        padding: 2px 10px;
+        padding: 4px 10px;
     }
 }

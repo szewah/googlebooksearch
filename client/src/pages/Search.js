@@ -33,7 +33,9 @@ class Search extends Component {
             id: item.id,
             title: item.volumeInfo.title,
             author: item.volumeInfo.authors,
-            description: item.searchInfo.textSnippet,
+            // description: item.searchInfo.textSnippet,
+            date: item.volumeInfo.publishedDate,
+            description: item.volumeInfo.description,
             image: !!item.volumeInfo.imageLinks
               ? item.volumeInfo.imageLinks.thumbnail
               : "https://place-hold.it/53x80",
@@ -59,7 +61,6 @@ class Search extends Component {
   };
 
   render() {
-    console.log("[DEBUG] books at render", this.state.books);
     return (
       <div>
         <Jumbotron

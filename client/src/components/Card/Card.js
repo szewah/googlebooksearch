@@ -30,7 +30,7 @@ const Card = props => {
                 <img className="bookimg" src={book.image} alt="" />
               </Col>
               <Col size="md-7">
-                <h6 className="author">{book.author}</h6>
+                <h6 className="author">{book.author} - {book.date}</h6>
                 <p className="description">{book.description}</p>
               </Col>
               <Col size="md-1">
