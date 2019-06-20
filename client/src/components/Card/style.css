@@ -1,0 +1,13 @@
+.description {
+    font-size: 14px;
+}
+
+a.link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #006621;
+}
+
+h5.book-title {
+    margin-bottom: 0 !important;
+}

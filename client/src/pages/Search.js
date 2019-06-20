@@ -14,6 +14,7 @@ class Search extends Component {
   };
 
   handleInputChange = event => {
+    event.preventDefault();
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -22,7 +23,7 @@ class Search extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    console.log("[DEBUG] query", this.state.query);
+    console.log("[QUERY IS]", this.state.query);
     API.getSearchedBooks(this.state.query)
       .then(res => {
         console.log("Response data", res.data.items);
@@ -32,7 +33,7 @@ class Search extends Component {
             id: item.id,
             title: item.volumeInfo.title,
             author: item.volumeInfo.authors,
-            description: item.volumeInfo.description,
+            description: item.searchInfo.textSnippet,
             image: !!item.volumeInfo.imageLinks
               ? item.volumeInfo.imageLinks.thumbnail
               : "https://place-hold.it/53x80",
@@ -40,11 +41,9 @@ class Search extends Component {
           };
           return book;
         });
-        console.log("[DEBUG] books", books);
         this.setState({ books: books, error: "", query: "" });
       })
       .catch(err => {
-        console.log("[DEBUG] error handling response", err);
         this.setState({ error: err.items });
       });
   };

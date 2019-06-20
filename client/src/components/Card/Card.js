@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "../Grid";
-import '../style.css'
+import './style.css'
 
 const Card = props => {
   return props.books.length === 0 ? (
@@ -13,7 +13,7 @@ const Card = props => {
             <Row>
               <Col size="md-12">
                 <a className="title" href={book.link}>
-                  <h5>{book.title}</h5>
+                  <h5 className="book-title">{book.title}</h5>
                 </a>
               </Col>
             </Row>
@@ -30,7 +30,7 @@ const Card = props => {
                 <img className="bookimg" src={book.image} alt="" />
               </Col>
               <Col size="md-7">
-                <h6 className="author">{book.authors}</h6>
+                <h6 className="author">{book.author}</h6>
                 <p className="description">{book.description}</p>
               </Col>
               <Col size="md-1">
