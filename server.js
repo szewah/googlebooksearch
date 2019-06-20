@@ -19,5 +19,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googleBook");
 
 // Start the API server
 app.listen(PORT, function() {
-  console.log("Listening on port http://localhost:", PORT);
+  console.log("Listening on port http://localhost:" + PORT);
 });
