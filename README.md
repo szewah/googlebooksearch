@@ -5,7 +5,8 @@ A book search app built on React. A user can search for a book and save it.
 - Github: https://github.com/szewah/googlebooksearch
 
 
-![googlebooksearch](https://user-images.githubusercontent.com/32065713/65732714-22349400-e099-11e9-9d61-ebf2ca9731e1.gif)
+![googlebooksearch](https://user-images.githubusercontent.com/32065713/65733254-ccadb680-e09b-11e9-8ef4-27f97ecd86d3.gif)
+
 
 
 ### Built with
