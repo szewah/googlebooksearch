@@ -2,17 +2,15 @@
 
 A book search app built on React. A user can search for a book and save it.
 - Heroku: https://sheltered-beyond-32917.herokuapp.com/
-- Github: https://github.com/szewah/googlebooksearch
 - Watch a video demonstration: https://vimeo.com/362688718
 
-
-![googlebooksearch](https://user-images.githubusercontent.com/32065713/65733254-ccadb680-e09b-11e9-8ef4-27f97ecd86d3.gif)
+<img width="1302" alt="Screen Shot 2019-09-27 at 10 37 28 AM" src="https://user-images.githubusercontent.com/32065713/65777893-e3432480-e112-11e9-81b7-17441a0ba50a.png">
 
 
 
 ### Built with
 
-Reactjs, Axios, Google Book API, Express, Heroku, Mongoose and Bootstrap
+React, Axios, Google Books API, Express, Heroku, MongoDB, Mongoose and Bootstrap.
 
 ### Installation
 Download the file
